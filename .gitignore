@@ -2,3 +2,5 @@ dataset/*
 evaluation/*
 outputs/*
 visual/*
+*.zip
+.DS_Store
