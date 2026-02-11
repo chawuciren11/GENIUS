@@ -26,6 +26,7 @@ PKU, CUHK, StepFun, PolyU, MSRA.
   <a href="#-contact"><b>📬 Contact</b></a>
 </p>
 
+![An overview of **GENIUS** benchmark.](assets/showtask.png)
 ---
 
 ## 🕙 Timeline
