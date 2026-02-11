@@ -173,21 +173,10 @@
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-full-width">
         <!-- <h2 class="title is-3">Abstract</h2> -->
         <div class="content has-text-justified">
-            Unified Multimodal Models (UMMs) have shown remarkable progress in visual generation.
-            Yet, existing benchmarks predominantly assess <i>Crystallized Intelligence</i>, which relies on recalling accumulated knowledge and learned schemas.
-            This focus overlooks <strong>Generative Fluid Intelligence (GFI)</strong>: the capacity to induce patterns, reason through constraints, and adapt to novel scenarios on the fly.
-            To rigorously assess this capability, we introduce <strong>GENIUS</strong> (GENerative Fluid Intelligence EvalUation Suite).
-            We formalize GFI as a synthesis of three primitives: 
-            (1) <strong>Inducing Implicit Patterns</strong> (e.g., inferring personalized visual preferences), 
-            (2) <strong>Executing Ad-hoc Constraints</strong> (e.g., visualizing abstract metaphors), and 
-            (3) <strong>Adapting to Contextual Knowledge</strong> (e.g., simulating counter-intuitive physics).
-            Our systematic evaluation of 12 representative models reveals significant performance deficits in these tasks.
-            Crucially, our diagnostic analysis disentangles these failure modes, demonstrating that deficits stem from limited context comprehension rather than insufficient intrinsic generative capability.
-            To bridge this gap, we propose a training-free attention intervention strategy.
-            Ultimately, GENIUS establishes a rigorous standard for GFI, guiding the field beyond knowledge utilization toward dynamic, general-purpose reasoning.
+            Over the past two years, we have witnessed an explosion in Unified Multimodal Models (UMMs). From Chameleon[1], Show-o[2] to Transfusion[3] and Emu[4], the field flourished with diverse architecture. Until the emergence of Bagel[5], architectural exploration gradually converged. In this phase, benefited by the integration of understanding, we have observed remarkable gains on the generation side: UMMs exhibit enhanced reasoning capabilities, and reflect world knowledge in generated outputs. The "VLM-as-Encoder" is becoming a new generative paradigm. This flourishing era constitutes the "First Half" of UMM development, where the community has primarily focused on architectural. On the generation side, attention has been largely directed toward capabilities such as static world knowledge, safety, and instruction adherence. 
         </div>
       </div>
     </div>
@@ -618,3 +607,4 @@ window.addEventListener('load', function() {
 </body>
 
 </html>
+
