@@ -167,8 +167,7 @@
             <strong>Coincidentally, our work aligns with the research focusing on "true" in-context learning, which is the foundation of Fluid Intelligence.</strong>
           </p> -->
           <p>
-            Existing benchmarks, such as the classic ARC-Bench<sup><a href="#ref-10">[10]</a></sup>, are predominantly grounded in understanding. 
-            While the importance of "System 2" thinking is frequently highlighted, it is typically discussed within comprehension contexts. 
+            Existing benchmarks, such as the classic ARC-Bench<sup><a href="#ref-10">[10]</a></sup>, are predominantly grounded in understanding, which is typically discussed within comprehension contexts. 
             However, visual generation is approaching a similar inflection point. 
             The historical fixation on pixel-level fidelity may represent a bias; in the long term, understanding and generation should arguably not be treated as separate tasks.
           </p>
@@ -187,20 +186,21 @@
               <strong>Contextual Knowledge Adaptation</strong>: This entails overcoming established priors to internalize counter-intuitive rules. For instance, given a counterfactual premise where "gravity is dictated by color", humans can effortlessly modulate their reasoning to imagine and generate content within this novel framework.
             </li>
           </ul>
-        </div>
+        <!-- </div>
         
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 
-<section class="section">
+<!-- <section class="section" style="background-color: #f5f5f5;">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered">
       <div class="column is-full-width">
-        <div class="content has-text-justified">
+        <h2 class="title is-3 has-text-centered">Defining General Intelligence: Crystallized vs. Fluid</h2>
+        <div class="content has-text-justified"> -->
           <p>
             We evaluated twelve models and surprisingly found that even the state-of-the-art Nano-Banana Pro failed to achieve a passing score. (Please refer to the paper for specific metrics and prompts.) Our evaluation focuses on three primary dimensions: logical correctness, preservation of reference information, and aesthetic quality. To ensure fairness and reproducibility, we developed manually annotated rubrics for each test case and utilized both open-source and proprietary models for evaluation.
           </p>
@@ -382,7 +382,7 @@
           <ul>
             <li>
               <strong>Generative Fluid Intelligence(GFI) remains a significant bottleneck for current models.</strong>
-              Even state-of-the-art models like Nano-Banana Pro fail to achieve a passing grade on the GENIUS benchmark, highlighting a critical gap in reasoning capabilities. Crucially, GENIUS demonstrates strong <strong>discriminative power</strong>, revealing distinct stratification across model capabilities. The significant performance gap—ranging from ~57.19 (Proprietary) down to ~26.74 (Open-Source)—highlights the benchmark’s sensitivity, validating it as a robust instrument for tracking the evolutionary progress of UMMs.
+              Even state-of-the-art models like Nano-Banana Pro fail to achieve a passing grade on the GENIUS benchmark, highlighting a critical gap in reasoning capabilities. Crucially, GENIUS demonstrates strong <strong>discriminative power</strong>, revealing distinct stratification across model capabilities. The significant performance gap ranging from ~57.19 (Proprietary) down to ~26.74 (Open-Source), which highlights the benchmark’s sensitivity, validating it as a robust instrument for tracking the evolutionary progress of UMMs.
             </li>
             
             <li>
@@ -407,17 +407,17 @@
               To test comprehension, we reformulated the task into a VQA format (b), using the rubric as the Ground Truth. Surprisingly, models achieved high accuracy, indicating a solid grasp of the context. We attribute the persistent generation failure—a "know-but-cannot-draw" phenomenon—to two factors: the difficulty of fully articulating fine-grained visual nuances within dense interleaved contexts, and structural inefficiencies in current UMMs where rich semantic understanding from the encoder fails to effectively propagate to the generative decoder.
             </li>
           </ul>
-        </div>
+        <!-- </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
-<section class="section" style="background-color: #f5f5f5;">
+<!-- <section class="section" style="background-color: #f5f5f5;">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <div class="content has-text-justified">
+        <div class="content has-text-justified"> -->
           <p>
             Building upon these findings, we conducted a deeper investigation:
           </p>
@@ -489,6 +489,10 @@
             <li>
               <strong>The evolution of generative models.</strong> 
               I boldly predict the end of standalone diffusion models. The future likely belongs to integrated systems combining Model Context Protocol (MCP) and agent.
+            </li>
+
+            <li>
+              <strong>The story is to be continued...</strong> 
             </li>
           </ul>
 
@@ -562,7 +566,7 @@
   </div>
 </section>
 
-<footer class="footer">
+<!-- <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
       <p>
@@ -572,7 +576,7 @@
       </p>
     </div>
   </div>
-</footer>
+</footer> -->
 
 </body>
 </html>
