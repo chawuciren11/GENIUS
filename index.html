@@ -78,7 +78,7 @@
               </span>
             
               <span class="link-block">
-                <a href="https://github.com/arctanxarc/GENIUS?tab=readme-ov-file" target="_blank"
+                <a href="https://github.com/arctanxarc/GENIUS" target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -152,11 +152,11 @@
             CI relies on recalling accumulated knowledge and learned schemas, while FI emphasizes the capacity to reason and solve problems in novel situations. The former has been the core focus of the "First Half" of UMM development: 
             through fitting massive datasets, models have acquired astonishing CI. For instance, a model's ability to generate a flawless cat often stems from exposure to billions of instances during training, followed by probabilistic reproduction during inference. 
             However, real-world demands are diverse, often requiring models to adapt to contexts on the fly, which poses a significant challenge to their FI.
-            Coincidentally, our work aligns with the initial research from Shunyu Yao's team, focusing on "true" in-context learning<sup><a href="#ref-9">[9]</a></sup>, which is also the foundation of FI. 
-            Our work can also be considered as the generative extension of their work.
+            <strong>Coincidentally, our work aligns with the initial research from Shunyu Yao's team, focusing on "true" in-context learning<sup><a href="#ref-9">[9]</a></sup>, which is also the foundation of FI. 
+            Our work can also be considered as the generative extension of their work.</strong>
           </p>
-          <ul>
-            <li>
+          <!-- <ul> -->
+            <!-- <li>
                 Crystallized Intelligence (CI): Relies on recalling accumulated knowledge and learned schemas. This has been the core focus of the "First Half". For instance, a model's ability to generate a flawless "cat" often stems from exposure to billions of instances during training.
             </li>
             <li>
@@ -165,7 +165,7 @@
           </ul>
           <p>
             <strong>Coincidentally, our work aligns with the research focusing on "true" in-context learning, which is the foundation of Fluid Intelligence.</strong>
-          </p>
+          </p> -->
           <p>
             Existing benchmarks, such as the classic ARC-Bench<sup><a href="#ref-10">[10]</a></sup>, are predominantly grounded in understanding. 
             While the importance of "System 2" thinking is frequently highlighted, it is typically discussed within comprehension contexts. 
@@ -173,21 +173,18 @@
             The historical fixation on pixel-level fidelity may represent a bias; in the long term, understanding and generation should arguably not be treated as separate tasks.
           </p>
           <p>
-            Guided by the definition of FI, 
-            we do not assess whether a model can render a "more realistic dog"—an indicator of CI. 
-            Instead, drawing inspiration from tasks humans perform effortlessly, 
-            we translate these capabilities into generative challenges:
+            Guided by the definition of FI, we do not assess whether a model can render a "more realistic dog"—an indicator of CI. Instead, drawing inspiration from tasks humans perform effortlessly, we translate these capabilities into generative challenges:
           </p>
           <img src="./static/images/showtask_page-0001.jpg" alt="GENIUS Benchmark Overview" style="width:100%; height:auto; margin-top: 20px;">
           <ul>
             <li>
-              Implicit Pattern Induction: Humans intuitively discern latent contextual cues, such as stylistic nuances in text or textural patterns in imagery.
+              <strong>Implicit Pattern Induction</strong>: Humans are adept at distilling implicit information from context, such as distinguishing preferences in text or stylistic textures in images.
             </li>
             <li>
-              Ad-hoc Constraint Execution: Humans adeptly reason under provisional, out-of-distribution constraints. This includes defining semantic visual operators or interpreting abstract symbols with context-specific meanings (e.g., performing arithmetic operations where objects symbolically represent numerical values).
+              <strong>Ad-hoc Constraint Execution</strong>: Humans adeptly reason under provisional, out-of-distribution constraints. This includes defining semantic visual operators or interpreting abstract symbols with context-specific meanings (e.g., performing arithmetic operations where objects symbolically represent numerical values).
             </li>
             <li>
-              Contextual Knowledge Adaptation: This entails overcoming established priors to internalize counter-intuitive rules. For instance, given a counterfactual premise where "gravity is dictated by color", humans can effortlessly modulate their reasoning to imagine and generate content within this novel framework.
+              <strong>Contextual Knowledge Adaptation</strong>: This entails overcoming established priors to internalize counter-intuitive rules. For instance, given a counterfactual premise where "gravity is dictated by color", humans can effortlessly modulate their reasoning to imagine and generate content within this novel framework.
             </li>
           </ul>
         </div>
@@ -205,14 +202,7 @@
       <div class="column is-full-width">
         <div class="content has-text-justified">
           <p>
-            We evaluated twelve models and surprisingly found that 
-            even the state-of-the-art Nano-Banana Pro failed to achieve a passing score. 
-            (Please refer to the paper for specific metrics and prompts.) 
-            Our evaluation focuses on three primary dimensions: 
-            logical correctness, preservation of reference information, and aesthetic quality. 
-            To ensure fairness and reproducibility, 
-            we developed manually annotated rubrics for each test case 
-            and utilized both open-source and proprietary models for evaluation.
+            We evaluated twelve models and surprisingly found that even the state-of-the-art Nano-Banana Pro failed to achieve a passing score. (Please refer to the paper for specific metrics and prompts.) Our evaluation focuses on three primary dimensions: logical correctness, preservation of reference information, and aesthetic quality. To ensure fairness and reproducibility, we developed manually annotated rubrics for each test case and utilized both open-source and proprietary models for evaluation.
           </p>
           
           <div class="table-container" style="overflow-x: auto;">
@@ -385,61 +375,36 @@
             </table>
 
           </div>
-          <h2 class="title is-3 has-text-left">Insights & Takeaways</h2>
+          <!-- <h2 class="title is-3 has-text-left">Insights & Takeaways</h2> -->
+          <p>
+            Beyond the quantitative results, our diagnostic analysis reveals several critical observations regarding the current limitations of UMMs:
+          </p>
           <ul>
             <li>
-              <strong>Generative models face a severe bottleneck in fluid intelligence.</strong>
-              Current models exhibit significant limitations in adaptability. 
-              Even state-of-the-art models like Nano-Banana Pro fail to achieve a passing grade on the GENIUS benchmark, highlighting a critical gap in reasoning capabilities.
+              <strong>Generative Fluid Intelligence(GFI) remains a significant bottleneck for current models.</strong>
+              Even state-of-the-art models like Nano-Banana Pro fail to achieve a passing grade on the GENIUS benchmark, highlighting a critical gap in reasoning capabilities. Crucially, GENIUS demonstrates strong <strong>discriminative power</strong>, revealing distinct stratification across model capabilities. The significant performance gap—ranging from ~57.19 (Proprietary) down to ~26.74 (Open-Source)—highlights the benchmark’s sensitivity, validating it as a robust instrument for tracking the evolutionary progress of UMMs.
             </li>
             
             <li>
-              <strong>Models struggle to transcend their pre-training distributions.</strong>
-              Performance significantly degrades in Contextual Knowledge Adaptation tasks, where the context explicitly contradicts pre-trained priors. 
-              This reveals a rigidity in current AI; models lack the cognitive flexibility to override the pre-trained priors and adapt to counter-intuitive rules, unlike human intelligence which demonstrates far more robust plasticity in updating beliefs.
+              <strong>Current models fail to effectively arbitrate the conflict between pre-trained priors and the given context.</strong>
+              Performance significantly degrades in Contextual Knowledge Adaptation tasks, where the context explicitly contradicts pre-trained priors. This reveals a rigidity in current AI: models lack the cognitive flexibility to override the pre-trained priors and adapt to counter-intuitive rules, unlike human intelligence which demonstrates far more robust plasticity in updating beliefs.
             </li>
             <li>
-               <strong>The fixation on aesthetics masks profound logical deficiencies.</strong> 
-               Aesthetic scores consistently outstrip reasoning metrics, 
-               reflecting a historical bias towards pixel-level fidelity (e.g., FID, IAA) 
-               over logical correctness. Consequently,
-                while models generate visually stunning images, 
-                they frequently "lose the plot" when prompts require complex reasoning, 
-                producing high-quality but semantically misaligned outputs.
+               <strong>Aesthetic fidelity masks deep logical deficiencies.</strong> 
+               Aesthetic scores consistently outstrip reasoning metrics, reflecting a historical bias towards pixel-level fidelity (e.g., FID, IAA) over logical correctness. Consequently, while models generate visually stunning images, they frequently "lose the plot" when prompts require complex reasoning, producing high-quality but semantically misaligned outputs.
             </li>
-            <img src="./static/images/ablation_page-0001.jpg" alt="GENIUS Benchmark Overview" style="width:100%; height:auto; ">
+            <img src="./static/images/ablation.png" alt="GENIUS Benchmark Overview" style="width:100%; height:auto; ">
             <li>
               <strong>Pre-Planning and Post-Reflection yield marginal gains.</strong> 
-              As illustrated in (a), we explored inference-time strategies such as "Pre-Planning" 
-              and "Post-Reflection" (feeding evaluated generations back as context). 
-              However, these yielded only negligible improvements, 
-              suggesting that current generic reasoning paradigms are insufficient 
-              to address the specific complexities of this task.
+              As illustrated in (a), we explored inference-time strategies such as "Pre-Planning" and "Post-Reflection" (feeding evaluated generations back as context). However, these yielded only negligible improvements, suggesting that current generic reasoning paradigms are insufficient to address the specific complexities of this task.
             </li>
             <li>
-              <strong>Context comprehension is the linchpin of success.</strong> 
-              Injecting human-curated rubrics into the context resulted in substantial performance surges. 
-              Since these rubrics distill human understanding, 
-              this implies that if models could autonomously achieve similar comprehension, 
-              the problem is largely solvable. 
-              However, results remain bounded by intrinsic model capabilities; for instance, 
-              Bagel's performance degradation even with 
-              multimodal rubrics highlights existing weaknesses in processing complex, 
-              interleaved multimodal inputs.
+              <strong>Context comprehension is the key to solve GFI problems.</strong> 
+              Injecting human-curated rubrics/hints into the context resulted in substantial performance surges. Since these rubrics distill human understanding, this implies that if models could autonomously achieve similar comprehension, the problem is largely solvable. However, results remain bounded by intrinsic model capabilities; for instance, Bagel's performance degradation even with multimodal rubrics highlights existing weaknesses in processing complex, interleaved multimodal inputs.
             </li>
             <li>
-              <strong>Generative failure stems primarily from an execution gap, 
-                not a comprehension deficit.</strong> 
-                To test comprehension, we reformulated the task into a VQA format (b), 
-                using the rubric as the Ground Truth. Surprisingly, 
-                models achieved high accuracy, indicating a solid grasp of the context. 
-                We attribute the persistent generation 
-                failure—a "know-but-cannot-draw" phenomenon—to two factors: 
-                the difficulty of fully articulating fine-grained visual nuances 
-                within dense interleaved contexts, 
-                and structural inefficiencies in current UMMs 
-                where rich semantic understanding 
-                from the encoder fails to effectively propagate to the generative decoder.
+              <strong>Generative failure primarily stems from an execution gap rather than comprehension deficits.</strong> 
+              To test comprehension, we reformulated the task into a VQA format (b), using the rubric as the Ground Truth. Surprisingly, models achieved high accuracy, indicating a solid grasp of the context. We attribute the persistent generation failure—a "know-but-cannot-draw" phenomenon—to two factors: the difficulty of fully articulating fine-grained visual nuances within dense interleaved contexts, and structural inefficiencies in current UMMs where rich semantic understanding from the encoder fails to effectively propagate to the generative decoder.
             </li>
           </ul>
         </div>
@@ -458,26 +423,15 @@
           </p>
           <img src="./static/images/image_attn_page-0001.jpg" alt="GENIUS Benchmark Overview" style="width:100%; height:auto;">
           <p>
-            We visualized the attention mechanism 
-            by employing the generated image tokens 
-            as Queries against the interleaved multimodal context (serving as Keys). 
-            Observations reveal that Bagel's attention distribution is erratic, 
-            characterized by irregular noise and stochastic spikes. 
-            This raises a critical question: 
-            To what extent does attention dictate context comprehension, 
-            and can a simple modulation of these weights enhance model performance?
+            We visualized the attention mechanism by employing the generated image tokens as Queries against the interleaved multimodal context (serving as Keys). Observations reveal that Bagel's attention distribution is erratic, characterized by irregular noise and stochastic spikes. This raises a critical question: To what extent does attention dictate context comprehension, and can a simple modulation of these weights enhance model performance?
           </p>
           <img src="./static/images/method_page-0001.jpg" alt="GENIUS Benchmark Overview" style="width:100%; height:auto">
           <p>
-            Drawing on theoretical frameworks from <sup><a href="#ref-11">[11]</a></sup> that interpret <strong>In-Context Learning (ICL) as implicit gradient descent</strong>, we extended this analysis to the Bagel architecture (full derivation provided in the paper). 
-            Theoretically, high-quality context acts as a signal for a more precise and definitive "gradient descent" trajectory. 
-            However, Bagel's diffuse attention maps suggest a failure to focus on critical task-relevant features. 
-            Consequently, the implicit gradient update lacks a coherent descent direction, trapping the model within its pre-training priors.
+            Drawing on theoretical frameworks from <sup><a href="#ref-11">[11]</a></sup> that interpret In-Context Learning (ICL) as implicit gradient descent, we extended this analysis to the Bagel architecture (full derivation provided in the paper). Theoretically, high-quality context acts as a signal for a more precise and definitive "gradient descent" trajectory. However, Bagel's diffuse attention maps suggest a failure to focus on critical task-relevant features. Consequently, the implicit gradient update lacks a coherent descent direction, trapping the model within its pre-training priors.
           </p>
           
           <p>
-            To address this, we propose a <strong>training-free attention adjustment mechanism</strong> (detailed in the paper) that redirects focus toward semantically relevant regions. 
-            Both qualitative and quantitative experiments demonstrate consistent improvements, establishing a <strong>Strong Baseline</strong> for future research.
+            To address this, we propose a training-free attention adjustment mechanism (detailed in the paper) that redirects focus toward semantically relevant regions. Both qualitative and quantitative experiments demonstrate consistent improvements, establishing a Strong Baseline for future research.
           </p>
         </div>
       </div>
@@ -493,33 +447,33 @@
         
         <div class="content has-text-justified">
           <p>
-            As we transition into the next phase of UMM research, I want to offer several critical questions and insights that may define the path forward:
+            As we go back to the second half of UMM research, I want to offer several critical questions and insights that may define the path forward:
           </p>
           
           <ul>
             <li>
-              <strong>Defining the ideal task.</strong> 
-              What capabilities should an ideal UMM possess that distinguish it from standard generative models? We hope GENIUS serves as a signpost in this trajectory, delineating tasks that require genuine multimodal reasoning rather than mere fitting.
+              <strong>What is the ideal task.</strong> 
+              What capabilities should an ideal UMM possess that distinguish it from standard generative models? GENIUS has made a good start, and hopefully it will become a milestone on this side road.
             </li>
             
             <li>
-              <strong>The agentic challenge & The "existential crisis".</strong> 
-              As "thinking with generated images" gains traction, we face a pivotal question: if specialized models (like Nano-Banana Pro) excel at generation, why must the intermediate imagery within a thinking trajectory originate from the UMM itself? This poses an existential challenge regarding the necessity of unified architectures versus modular, agentic systems.
+              <strong>The challenge of agentic. </strong> 
+              Researchers exploring "thinking with generated images" using UMMs must critically examine a fundamental question: Given the robust generation capabilities of models like Nano 2, why must the images within a reasoning trajectory originate from the UMM itself? I term this the "Existential Crisis" of UMMs.
             </li>
             
             <li>
-              <strong>Synergy Between Understanding and Generation.</strong> 
-              While it is consensus that understanding aids generation, the reverse remains an open question. However, from first principles—and as discussed in our NeurIPS 2025 paper—the act of creation should deepen comprehension, mirroring human cognition where sketching clarifies concepts. The hurdle remains finding the appropriate tasks and scenarios to manifest this loop.
+              <strong>Mutual enhancement between understanding and generation. </strong> 
+              Achieving mutual reinforcement between understanding and generation represents the ultimate aspiration for UMM researchers. While it is widely accepted that understanding enhances generation, whether generation conversely aids understanding remains an open question. From first principles, however, generation should theoretically facilitate understanding. As discussed in our NeurIPS 2025 paper<sup><a href="#ref-12">[12]</a></sup>, this aligns with human cognition: establishing a preliminary concept aids drawing, and the act of drawing, in turn, deepens conceptual understanding. This challenge mirrors the previous point: the field currently lacks appropriate scenarios and tasks to demonstrate this effect.
             </li>
             
             <li>
-              <strong>Architectural divergence.</strong> 
-              Despite the exhaustive permutation of components, few models truly master interleaved inputs. The field may be suffering from path dependence on VLM architectures (like LLaVA). We must question: is the established path the correct one? This doubt is driving a shift toward native multimodal architectures in 2025.
+              <strong>Architectural convergence may be illusory.</strong> 
+              Despite exhaustive permutations of UMM components that seem to cover every possibility, our evaluation reveals that few models can genuinely process multi-modal interleaved inputs. UMM development may be misguided by a path dependency on VLM architectures. As with LLaVA, does established practice imply correctness? Consequently, 2025 has witnessed a growing shift toward native multimodal research.
             </li>
             
             <li>
-              <strong>Visualizing understanding.</strong> 
-              The current paradigm often constrains generation as a byproduct of understanding (e.g., LLMs performing denoising). Perhaps the reverse—adapting "understanding" to serve "generation"—aligns better with human perception? Recent explorations like DeepSeek-OCR, which utilize visual modalities to structure understanding, point toward this possibility.
+              <strong>Visual presentation of understanding.</strong> 
+              The prevailing "First Half" adapts generation to understanding, constraining generation as a byproduct—exemplified by using LLMs for denoising/AR or utilizing diffusion as a post-head. Conversely, adapting understanding to generation may be more rational. This aligns with human perceptual logic, as seen in DeepSeek-OCR's exploration of using visual presentation for understanding.
             </li>
             
             <li>
@@ -529,22 +483,19 @@
             
             <li>
               <strong>Latent vs. Pixel-Level.</strong> 
-              For internal reasoning (excluding human interaction), generating at the latent level might suffice to aid understanding, rendering pixel-level reconstruction redundant and noisy. The critical question for the "second half" is not if modalities can share a latent space, but specifically what kind of shared latent space best supports reasoning.
+              Latent vs. Pixel-Level For internal reasoning (excluding human interaction), generating at the latent level might suffice to aid understanding, rendering pixel-level reconstruction redundant and noisy. The critical question for the "second half" is not if modalities can share a latent space, but specifically what kind of shared latent space best supports reasoning.
             </li>
             
             <li>
               <strong>The evolution of generative models.</strong> 
-              I boldly predict the end of standalone diffusion models. The future likely belongs to integrated systems combining Model Context Protocol (MCP) and agentic workflows.
+              I boldly predict the end of standalone diffusion models. The future likely belongs to integrated systems combining Model Context Protocol (MCP) and agent.
             </li>
           </ul>
 
           <hr>
 
           <p>
-            The first half of the UMM era was a carnival of memorization and fitting. 
-            The second half will be an arduous journey toward reasoning, adaptation, and real-world grounding.
-            To discuss fluid intelligence is to discuss the evolution of UMMs from skilled "rote memorizers" into genuine "thinkers." 
-            We must aim to redefine the intellectual boundaries of UMMs, moving beyond the simple superposition of understanding and generation tasks.
+            The first half of the UMM era was a carnival of memorization and fitting. The second half will be an arduous journey toward reasoning, adaptation, and real-world application. To discuss fluid intelligence is to discuss the evolution of UMMs from skilled "memorizers" into genuine "thinkers." We must aim to redefine the intellectual boundaries of UMMs, moving beyond the simple superposition of understanding and generation tasks.
           </p>
           
         </div>
@@ -601,6 +552,10 @@
       
       <p id="ref-11">
         [11] Learning without training: The implicit dynamics of in-context learning
+      </p>
+
+      <p id="ref-12">
+        [12] UniCTokens: Boosting Personalized Understanding and Generation via Unified Concept Tokens
       </p>
 
     </div>
