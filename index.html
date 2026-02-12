@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="description"
         content="The Second Half of Unified Models">
-  <!-- <meta name="keywords" content="GENIUS, Fluid Intelligence, Multimodal, Benchmark, Generative AI"> -->
+  <meta name="keywords" content="Unified Models, Fluid Intelligence, GENIUS, Multimodal, Generative AI, Blog">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Second Half of Unified Models</title>
 
@@ -38,7 +38,7 @@
 </head>
 <body>
 
-<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -53,19 +53,9 @@
           <i class="fas fa-home"></i>
       </span>
       </a>
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="#">
-            Related Paper 1 (Coming Soon)
-          </a>
-        </div>
-      </div>
     </div>
   </div>
-</nav> -->
+</nav>
 
 
 <section class="hero">
@@ -75,53 +65,10 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">The Second Half of Unified Models</h1>
           
-          <!-- <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              Ruichuan An<sup>*,1</sup>,</span>
-            <span class="author-block">
-              Sihan Yang<sup>*,1</sup>,</span>
-            <span class="author-block">
-              Ziyu Guo<sup>2</sup>,</span>
-            <span class="author-block">
-              Wei Dai<sup>1</sup>,</span>
-            <span class="author-block">
-              Zijun Shen<sup>1</sup>,</span>
-            <span class="author-block">
-              Haodong Li<sup>3</sup>,</span>
-            <br>
-            <span class="author-block">
-              Renrui Zhang<sup>†,2</sup>,</span>
-            <span class="author-block">
-              Xinyu Wei<sup>4</sup>,</span>
-            <span class="author-block">
-              Guopeng Li<sup>3</sup>,</span>
-            <span class="author-block">
-              Wenshan Wu<sup>5</sup>,</span>
-            <span class="author-block">
-              Wentao Zhang<sup>‡,1</sup>
-            </span>
-          </div> -->
-
-          <!-- <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Peking University,</span>
-            <span class="author-block"><sup>2</sup>CUHK,</span>
-            <span class="author-block"><sup>3</sup>StepFun,</span>
-            <span class="author-block"><sup>4</sup>PolyU,</span>
-            <span class="author-block"><sup>5</sup>MSRA</span>
-            <br>
-            <span class="email-link">
-                <a href="mailto:wentao.zhang@pku.edu.cn">wentao.zhang@pku.edu.cn</a>
-            </span>
-          </div> -->
-          
-          <!-- <div class="is-size-6 publication-authors">
-            <span class="author-block"><sup>*</sup>Equal Contribution, <sup>†</sup>Project Leader, <sup>‡</sup>Corresponding Author</span>
-          </div> -->
-
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="GENIUS.pdf" target="_blank"
+                <a href="static/pdfs/GENIUS_paper.pdf" target="_blank"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -131,22 +78,20 @@
               </span>
             
               <span class="link-block">
-                <a href="https://github.com/arctanxarc/GENIUS" target="_blank"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a class="external-link button is-normal is-rounded is-dark" disabled style="background-color: #d3d3d3; color: #666; cursor: not-allowed;">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (Coming Soon)</span>
                 </a>
               </span>
-            
+
               <span class="link-block">
-                <a href="https://huggingface.co/datasets/HankYang428/GENIUS" target="_blank"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a class="external-link button is-normal is-rounded is-dark" disabled style="background-color: #d3d3d3; color: #666; cursor: not-allowed;">
                   <span class="icon">
-                      <i class="far fa-images"></i>
+                      <i class="fab fa-github"></i>
                   </span>
-                  <span>Data</span>
+                  <span>Dataset (Coming Soon)</span>
                 </a>
               </span>
             </div>
@@ -158,51 +103,35 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="./static/images/showtask_page-0001.jpg" alt="GENIUS Benchmark Overview" style="width:100%; height:auto;">
-      <h2 class="subtitle has-text-centered">
-        <b>GENIUS</b> is the first benchmark designed to purely quantify <i>Generative Fluid Intelligence (GFI)</i>. 
-        It features 510 expert-curated samples spanning three dimensions and five tasks.
-      </h2>
-    </div>
-  </div>
-</section>
-
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
-        <!-- <h2 class="title is-3">Abstract</h2> -->
-        <div class="content has-text-justified">
-            Over the past two years, we have witnessed an explosion in Unified Multimodal Models (UMMs). From Chameleon[1], Show-o[2] to Transfusion[3] and Emu[4], the field flourished with diverse architecture. Until the emergence of Bagel[5], architectural exploration gradually converged. In this phase, benefited by the integration of understanding, we have observed remarkable gains on the generation side: UMMs exhibit enhanced reasoning capabilities, and reflect world knowledge in generated outputs. The "VLM-as-Encoder" is becoming a new generative paradigm. This flourishing era constitutes the "First Half" of UMM development, where the community has primarily focused on architectural. On the generation side, attention has been largely directed toward capabilities such as static world knowledge, safety, and instruction adherence. 
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Dataset Statistics</h2>
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width"> -->
         <div class="content has-text-justified">
           <p>
-            GENIUS comprises a total of <b>510 expert-curated samples</b> spanning 20 diverse sub-tasks. 
-            The dataset is structurally distributed across three core dimensions: 
-            <b>Implicit Pattern Induction</b> (86 samples), 
-            <b>Ad-hoc Constraint Execution</b> (213 samples), and 
-            <b>Contextual Knowledge Adaptation</b> (211 samples).
+            Over the past two years, we have witnessed an explosion in Unified Multimodal Models (UMMs). 
+            From Chameleon<sup><a href="#ref-1">[1]</a></sup>, 
+            Show-o<sup><a href="#ref-2">[2]</a></sup> 
+            to Transfusion<sup><a href="#ref-3">[3]</a></sup> 
+            and Emu<sup><a href="#ref-4">[4]</a></sup>, 
+            the field flourished with diverse architecture. 
+            Until the emergence of Bagel<sup><a href="#ref-5">[5]</a></sup>, 
+            architectural exploration gradually converged. 
+            In this phase, benefited by the integration of understanding, we have observed remarkable gains on the generation side: UMMs exhibit enhanced reasoning capabilities, and reflect world knowledge in generated outputs. 
+            The "VLM-as-Encoder" is becoming a new generative paradigm. 
+            This flourishing era constitutes the "First Half" of UMM development, where the community has primarily focused on architectural. 
+            On the generation side, attention has been largely directed toward capabilities such as static world knowledge, safety, and instruction adherence.
           </p>
-        </div>
-        <div class="content has-text-centered">
-          <img src="./static/images/circle_page-0001.jpg" 
-               alt="GENIUS Dataset Statistics" 
-               style="width: 60%; max-width: 600px; margin-top: 20px; border: 1px solid #eee; border-radius: 10px; padding: 10px;">
-          <p class="is-size-6" style="margin-top: 10px; color: gray;">
-            Data composition of GENIUS. The suite covers 3 dimensions, 5 tasks, and 20 sub-tasks.
+          <p>
+            However, as the marginal returns of architectural exploration diminish, we confront a pivotal inflection point. 
+            With the construction of UMMs demystified, the research focus inevitably pivots toward their effective utilization and the identification of their intrinsic strengths, signaling our readiness to enter the "Second Half." 
+            In contrast to the First Half's emphasis on implementation and benchmark maximization, this new phase necessitates the establishment of insightful evaluation frameworks that prioritize capabilities unique to UMMs and their adaptability to complex, real-world demands. 
+            Despite the proliferation of models and soaring metrics witnessed in 2024–2025, a qualitative paradigm shift in practical creation and interaction remains elusive. 
+            <strong>「The remainder of the Second Half will be elaborated upon in subsequent sections.」</strong>
+          </p>
+          <p>
+            This rapid advancement invites a natural question: 
+            <strong>How far are current UMMs from achieving true general intelligence regrading visual generation?</strong>
           </p>
         </div>
       </div>
@@ -210,20 +139,79 @@
   </div>
 </section>
 
+<section class="section" style="background-color: #f5f5f5;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <!-- <h2 class="title is-3 has-text-centered">Defining General Intelligence: Crystallized vs. Fluid</h2> -->
+        <div class="content has-text-justified">
+          <p>
+            Drawing from the literature<sup><a href="#ref-6">[6]</a></sup>, general intelligence can be decoupled into Crystallized Intelligence (CI)<sup><a href="#ref-7">[7]</a></sup> and Fluid Intelligence (FI)<sup><a href="#ref-8">[8]</a></sup>. 
+            CI relies on recalling accumulated knowledge and learned schemas, while FI emphasizes the capacity to reason and solve problems in novel situations. 
+            The former has been the core focus of the "First Half" of UMM development: through fitting massive datasets, models have acquired astonishing CI. 
+            For instance, a model's ability to generate a flawless cat often stems from exposure to billions of instances during training, followed by probabilistic reproduction during inference. 
+            However, real-world demands are diverse, often requiring models to adapt to contexts on the fly, which poses a significant challenge to their FI. 
+            Coincidentally, our work aligns with the initial research from Shunyu Yao's team, focusing on "true" in-context learning<sup><a href="#ref-9">[9]</a></sup>, which is also the foundation of FI. 
+            Our work can also be considered as the generative extension of their work.
+          </p>
+          <ul>
+            <li>
+                Crystallized Intelligence (CI): Relies on recalling accumulated knowledge and learned schemas. This has been the core focus of the "First Half". For instance, a model's ability to generate a flawless "cat" often stems from exposure to billions of instances during training.
+            </li>
+            <li>
+                Fluid Intelligence (FI): Emphasizes the capacity to reason and solve problems in novel situations. Real-world demands are diverse, often requiring models to adapt to contexts on the fly.
+            </li>
+          </ul>
+          <p>
+            <strong>Coincidentally, our work aligns with the research focusing on "true" in-context learning, which is the foundation of Fluid Intelligence.</strong>
+          </p>
+          <p>
+            Existing benchmarks, such as the classic ARC-Bench<sup><a href="#ref-10">[10]</a></sup>, are predominantly grounded in understanding. 
+            While the importance of "System 2" thinking is frequently highlighted, it is typically discussed within comprehension contexts. 
+            However, visual generation is approaching a similar inflection point. 
+            The historical fixation on pixel-level fidelity may represent a bias; in the long term, understanding and generation should arguably not be treated as separate tasks.
+          </p>
+          <p>
+            Guided by the definition of FI, 
+            we do not assess whether a model can render a "more realistic dog"—an indicator of CI. 
+            Instead, drawing inspiration from tasks humans perform effortlessly, 
+            we translate these capabilities into generative challenges:
+          </p>
+          <img src="./static/images/showtask_page-0001.jpg" alt="GENIUS Benchmark Overview" style="width:100%; height:auto; margin-top: 20px;">
+          <ul>
+            <li>
+              Implicit Pattern Induction: Humans intuitively discern latent contextual cues, such as stylistic nuances in text or textural patterns in imagery.
+            </li>
+            <li>
+              Ad-hoc Constraint Execution: Humans adeptly reason under provisional, out-of-distribution constraints. This includes defining semantic visual operators or interpreting abstract symbols with context-specific meanings (e.g., performing arithmetic operations where objects symbolically represent numerical values).
+            </li>
+            <li>
+              Contextual Knowledge Adaptation: This entails overcoming established priors to internalize counter-intuitive rules. For instance, given a counterfactual premise where "gravity is dictated by color", humans can effortlessly modulate their reasoning to imagine and generate content within this novel framework.
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Leaderboard</h2>
         <div class="content has-text-justified">
           <p>
-            We evaluate 12 representative models (Proprietary and Open-Source) on GENIUS. 
-            The metrics include <strong>Rule Compliance (RC)</strong>, <strong>Visual Consistency (VC)</strong>, and <strong>Aesthetic Quality (AQ)</strong>.
-            The <b>Overall</b> score is a weighted average (RC:VC:AQ = 6:3.5:0.5).
-            <br>
-            <span style="font-size: 0.8em; color: gray;">
-              Background colors indicate: <span style="background-color: #ffe6e6; padding: 0 5px; border-radius: 3px;">Best</span> and <span style="background-color: #e6f7ff; padding: 0 5px; border-radius: 3px;">Second Best</span>.
-            </span>
+            We evaluated twelve models and surprisingly found that 
+            even the state-of-the-art Nano-Banana Pro failed to achieve a passing score. 
+            (Please refer to the paper for specific metrics and prompts.) 
+            Our evaluation focuses on three primary dimensions: 
+            logical correctness, preservation of reference information, and aesthetic quality. 
+            To ensure fairness and reproducibility, 
+            we developed manually annotated rubrics for each test case 
+            and utilized both open-source and proprietary models for evaluation.
           </p>
           
           <div class="table-container" style="overflow-x: auto;">
@@ -384,17 +372,179 @@
                 </tr>
                 
                 <tr style="background-color: #fffdf5; border: 2px solid #ffe08a;">
-                  <td style="text-align: left;">Ours</td>
+                  <td style="text-align: left;"><b>Ours</b></td>
                   <td>✅</td>
-                  <td>32.92</td><td>39.54</td><td>44.92</td><td>66.71</td>
-                  <td>36.54</td><td>26.73</td><td>67.11</td>
-                  <td>30.45</td><td>35.11</td><td>47.84</td>
-                  <td>23.67</td><td>36.75</td><td>57.78</td>
-                  <td>34.22</td><td>-</td><td>52.75</td>
+                  <td style="background-color: #e6f7ff;"><b>38.84</b></td> <td>47.34</td><td>48.51</td><td>71.88</td>
+                  <td>40.71</td><td>30.81</td><td>70.02</td>
+                  <td>32.77</td><td>38.56</td><td>50.51</td>
+                  <td>28.78</td><td>40.87</td><td>62.96</td>
+                  <td>34.81</td><td>-</td><td>56.81</td>
                 </tr>
               </tbody>
             </table>
+
           </div>
+          <h2 class="title is-3 has-text-left">Insights & Takeaways</h2>
+          <ul>
+            <li>
+              <strong>Generative models face a severe bottleneck in fluid intelligence.</strong>
+              Current models exhibit significant limitations in adaptability. 
+              Even state-of-the-art models like Nano-Banana Pro fail to achieve a passing grade on the GENIUS benchmark, highlighting a critical gap in reasoning capabilities.
+            </li>
+            
+            <li>
+              <strong>Models struggle to transcend their pre-training distributions.</strong>
+              Performance significantly degrades in Contextual Knowledge Adaptation tasks, where the context explicitly contradicts pre-trained priors. 
+              This reveals a rigidity in current AI; models lack the cognitive flexibility to override the pre-trained priors and adapt to counter-intuitive rules, unlike human intelligence which demonstrates far more robust plasticity in updating beliefs.
+            </li>
+            <li>
+               <strong>The fixation on aesthetics masks profound logical deficiencies.</strong> 
+               Aesthetic scores consistently outstrip reasoning metrics, 
+               reflecting a historical bias towards pixel-level fidelity (e.g., FID, IAA) 
+               over logical correctness. Consequently,
+                while models generate visually stunning images, 
+                they frequently "lose the plot" when prompts require complex reasoning, 
+                producing high-quality but semantically misaligned outputs.
+            </li>
+            <img src="./static/images/ablation_page-0001.jpg" alt="GENIUS Benchmark Overview" style="width:100%; height:auto; ">
+            <li>
+              <strong>Pre-Planning and Post-Reflection yield marginal gains.</strong> 
+              As illustrated in (a), we explored inference-time strategies such as "Pre-Planning" 
+              and "Post-Reflection" (feeding evaluated generations back as context). 
+              However, these yielded only negligible improvements, 
+              suggesting that current generic reasoning paradigms are insufficient 
+              to address the specific complexities of this task.
+            </li>
+            <li>
+              <strong>Context comprehension is the linchpin of success.</strong> 
+              Injecting human-curated rubrics into the context resulted in substantial performance surges. 
+              Since these rubrics distill human understanding, 
+              this implies that if models could autonomously achieve similar comprehension, 
+              the problem is largely solvable. 
+              However, results remain bounded by intrinsic model capabilities; for instance, 
+              Bagel's performance degradation even with 
+              multimodal rubrics highlights existing weaknesses in processing complex, 
+              interleaved multimodal inputs.
+            </li>
+            <li>
+              <strong>Generative failure stems primarily from an execution gap, 
+                not a comprehension deficit.</strong> 
+                To test comprehension, we reformulated the task into a VQA format (b), 
+                using the rubric as the Ground Truth. Surprisingly, 
+                models achieved high accuracy, indicating a solid grasp of the context. 
+                We attribute the persistent generation 
+                failure—a "know-but-cannot-draw" phenomenon—to two factors: 
+                the difficulty of fully articulating fine-grained visual nuances 
+                within dense interleaved contexts, 
+                and structural inefficiencies in current UMMs 
+                where rich semantic understanding 
+                from the encoder fails to effectively propagate to the generative decoder.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background-color: #f5f5f5;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
+          <p>
+            Building upon these findings, we conducted a deeper investigation:
+          </p>
+          <img src="./static/images/image_attn_page-0001.jpg" alt="GENIUS Benchmark Overview" style="width:100%; height:auto;">
+          <p>
+            We visualized the attention mechanism 
+            by employing the generated image tokens 
+            as Queries against the interleaved multimodal context (serving as Keys). 
+            Observations reveal that Bagel's attention distribution is erratic, 
+            characterized by irregular noise and stochastic spikes. 
+            This raises a critical question: 
+            To what extent does attention dictate context comprehension, 
+            and can a simple modulation of these weights enhance model performance?
+          </p>
+          <img src="./static/images/method_page-0001.jpg" alt="GENIUS Benchmark Overview" style="width:100%; height:auto">
+          <p>
+            Drawing on theoretical frameworks from <sup><a href="#ref-11">[11]</a></sup> that interpret <strong>In-Context Learning (ICL) as implicit gradient descent</strong>, we extended this analysis to the Bagel architecture (full derivation provided in the paper). 
+            Theoretically, high-quality context acts as a signal for a more precise and definitive "gradient descent" trajectory. 
+            However, Bagel's diffuse attention maps suggest a failure to focus on critical task-relevant features. 
+            Consequently, the implicit gradient update lacks a coherent descent direction, trapping the model within its pre-training priors.
+          </p>
+          
+          <p>
+            To address this, we propose a <strong>training-free attention adjustment mechanism</strong> (detailed in the paper) that redirects focus toward semantically relevant regions. 
+            Both qualitative and quantitative experiments demonstrate consistent improvements, establishing a <strong>Strong Baseline</strong> for future research.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+
+        
+        <div class="content has-text-justified">
+          <p>
+            As we transition into the next phase of UMM research, I want to offer several critical questions and insights that may define the path forward:
+          </p>
+          
+          <ul>
+            <li>
+              <strong>Defining the ideal task.</strong> 
+              What capabilities should an ideal UMM possess that distinguish it from standard generative models? We hope GENIUS serves as a signpost in this trajectory, delineating tasks that require genuine multimodal reasoning rather than mere fitting.
+            </li>
+            
+            <li>
+              <strong>The agentic challenge & The "existential crisis".</strong> 
+              As "thinking with generated images" gains traction, we face a pivotal question: if specialized models (like Nano-Banana Pro) excel at generation, why must the intermediate imagery within a thinking trajectory originate from the UMM itself? This poses an existential challenge regarding the necessity of unified architectures versus modular, agentic systems.
+            </li>
+            
+            <li>
+              <strong>Synergy Between Understanding and Generation.</strong> 
+              While it is consensus that understanding aids generation, the reverse remains an open question. However, from first principles—and as discussed in our NeurIPS 2025 paper—the act of creation should deepen comprehension, mirroring human cognition where sketching clarifies concepts. The hurdle remains finding the appropriate tasks and scenarios to manifest this loop.
+            </li>
+            
+            <li>
+              <strong>Architectural divergence.</strong> 
+              Despite the exhaustive permutation of components, few models truly master interleaved inputs. The field may be suffering from path dependence on VLM architectures (like LLaVA). We must question: is the established path the correct one? This doubt is driving a shift toward native multimodal architectures in 2025.
+            </li>
+            
+            <li>
+              <strong>Visualizing understanding.</strong> 
+              The current paradigm often constrains generation as a byproduct of understanding (e.g., LLMs performing denoising). Perhaps the reverse—adapting "understanding" to serve "generation"—aligns better with human perception? Recent explorations like DeepSeek-OCR, which utilize visual modalities to structure understanding, point toward this possibility.
+            </li>
+            
+            <li>
+              <strong>The object of unification.</strong> 
+              Text, with its sequential and causal nature, shares more with video than with static images. Unifying static image generation with language understanding might be a suboptimal local minimum; a shift toward video generation/understanding could resolve many current architectural dissonances.
+            </li>
+            
+            <li>
+              <strong>Latent vs. Pixel-Level.</strong> 
+              For internal reasoning (excluding human interaction), generating at the latent level might suffice to aid understanding, rendering pixel-level reconstruction redundant and noisy. The critical question for the "second half" is not if modalities can share a latent space, but specifically what kind of shared latent space best supports reasoning.
+            </li>
+            
+            <li>
+              <strong>The evolution of generative models.</strong> 
+              I boldly predict the end of standalone diffusion models. The future likely belongs to integrated systems combining Model Context Protocol (MCP) and agentic workflows.
+            </li>
+          </ul>
+
+          <hr>
+
+          <p>
+            The first half of the UMM era was a carnival of memorization and fitting. 
+            The second half will be an arduous journey toward reasoning, adaptation, and real-world grounding.
+            To discuss fluid intelligence is to discuss the evolution of UMMs from skilled "rote memorizers" into genuine "thinkers." 
+            We must aim to redefine the intellectual boundaries of UMMs, moving beyond the simple superposition of understanding and generation tasks.
+          </p>
           
         </div>
       </div>
@@ -402,209 +552,72 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Diagnostic Analysis</h2>
-        
-        <div class="content has-text-justified">
-          <h4 class="title is-5">1. The Execution Gap & Metric Validation</h4>
-          <p>
-            <b>Why do models fail?</b> We identify a significant <b>"Execution Gap"</b>: models accurately comprehend context (high VQA accuracy) yet fail to execute it in generation.
-            <br>
-            <b>Is the judge reliable?</b> Our validation shows the LMM-as-a-Judge metric achieves a <b>0.96+ Pearson correlation</b> with human experts, ensuring evaluation reliability.
-          </p>
-        </div>
-        <img src="./static/images/ablation_page-0001.jpg" 
-             alt="Diagnostic Analysis and Metric Validation" 
-             style="width: 100%; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 40px;">
 
-        <div class="content has-text-justified">
-          <h4 class="title is-5">2. Visualizing the Cause: Noisy Gradients</h4>
-          <p>
-            Further attention analysis reveals the root cause: existing models suffer from <b>Noisy Gradients</b> due to distracted attention on irrelevant tokens. 
-            Our method successfully suppresses noise and focuses attention on critical signal tokens, resulting in a <b>Clean Gradient</b>.
-          </p>
-        </div>
-        <img src="./static/images/image_attn_page-0001.jpg" 
-             alt="Attention Visualization" 
-             style="width: 100%; border: 1px solid #ddd; border-radius: 5px;">
-        
-      </div>
-    </div>
-  </div>
-</section>
-    <!-- <hr style="margin: 40px 0;"> -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Methodology</h2>
-        <div class="content has-text-justified">
-          <p>
-            To address the "Noisy Gradient" issue identified above, we propose a <b>training-free attention intervention strategy</b>. 
-            By viewing In-Context Learning (ICL) as implicit fine-tuning, we employ a three-stage pipeline: <b>Keyword Distillation</b>, <b>Relevance Mapping</b>, and <b>Bias Injection</b> to rectify the optimization direction.
-          </p>
-        </div>
-        <img src="./static/images/method_page-0001.jpg" 
-             alt="Method Pipeline" 
-             style="width: 100%; margin-top: 10px; margin-bottom: 30px;">
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
-    <!-- <div class="content has-text-justified">
-      <p>
-        Detailed qualitative comparison of model outputs on GENIUS tasks. 
-      </p>
-    </div> -->
-
-    <div id="genius-carousel" class="carousel results-carousel" style="min-height: 500px; overflow: hidden;">
-      
-      <div class="item">
-        <div class="content has-text-centered">
-          <img src="./static/images/app_showcase_1_page-0001.jpg" 
-               alt="Implicit Pattern Induction Examples" 
-               style="width: 100%; display: block; border: none !important; box-shadow: none !important;">
-          <p class="is-size-6" style="margin-top: 15px;">
-            Detailed Qualitative Examples and Model Outputs. (1/2)
-          </p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="content has-text-centered">
-          <img src="./static/images/app_showcase_2_page-0001.jpg" 
-               alt="Ad-hoc Constraint Execution Examples" 
-               style="width: 100%; display: block; border: none !important; box-shadow: none !important;">
-          <p class="is-size-6" style="margin-top: 15px;">
-            Detailed Qualitative Examples and Model Outputs. (2/2)
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<script>
-window.addEventListener('load', function() {
-  // 找到我们的特定容器
-  var element = document.querySelector('#genius-carousel');
-  
-  if (element && typeof bulmaCarousel !== 'undefined') {
-    // 1. 如果之前已经被 index.js 初始化过了，先尝试获取实例
-    if (element.bulmaCarousel) {
-        // 强制修改参数
-        element.bulmaCarousel.options.slidesToShow = 1;
-        element.bulmaCarousel.options.slidesToScroll = 1;
-        element.bulmaCarousel.options.infinite = true;
-        element.bulmaCarousel.refresh(); // 强制刷新
-    } else {
-        // 2. 如果还没初始化，或者是全新的，手动初始化
-        bulmaCarousel.attach('#genius-carousel', {
-            slidesToScroll: 1,
-            slidesToShow: 1,
-            pagination: true,
-            navigation: true,
-            loop: true,
-            infinite: true,
-            autoplay: false,
-        });
-    }
-    
-    // 3. 额外保险：强制触发一次 resize 事件，解决有时宽度计算错误的问题
-    window.dispatchEvent(new Event('resize'));
-  }
-});
-</script>
-
-<style>
-/* 确保轮播内容可见 */
-#genius-carousel {
-    opacity: 1 !important; 
-    visibility: visible !important;
-}
-
-/* 强制让轮播轨道高度自适应 */
-#genius-carousel .slick-list {
-    height: auto !important;
-    overflow: visible !important; /* 允许内容撑开 */
-}
-
-#genius-carousel .slick-track {
-    display: flex;
-    align-items: flex-start;
-}
-
-/* 修复左右箭头：垂直居中，加深背景色确保可见 */
-.carousel-arrow {
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 50; /* 层级设高，防止被图片遮挡无法点击 */
-    width: 60px;
-    height: 60px;
-    background: rgba(0,0,0,0.2) !important; 
-    border: none;
-}
-.carousel-arrow:hover {
-    background: rgba(0,0,0,0.5) !important;
-}
-
-/* 移除 Bulma 可能默认给 item 加的 padding */
-.item {
-    padding: 0 5px;
-}
-</style>
-
-<section class="section" id="BibTeX">
+<section class="section" id="references">
   <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>
+    <h2 class="title">References</h2>
+    <div style="font-size: 0.8em; line-height: 1.6;">
+      
+      <p id="ref-1">
+        [1] Chameleon: Mixed-modal early-fusion foundation models
+      </p>
+      
+      <p id="ref-2">
+        [2] Show-o: One single transformer to unify multimodal understanding and generation
+      </p>
+      
+      <p id="ref-3">
+        [3] Transfusion: Predict the Next Token and Diffuse Images with One Multi-Modal Model
+      </p>
+      
+      <p id="ref-4">
+        [4] Emu: Generative Pretraining in Multimodality
+      </p>
+      
+      <p id="ref-5">
+        [5] Emerging Properties in Unified Multimodal Pretraining
+      </p>
+      
+      <p id="ref-6">
+        [6] Theory of fluid and crystallized intelligence: A critical experiment
+      </p>
+      
+      <p id="ref-7">
+        [7] On the nature of crystallized intelligence: The relationship between verbal ability and factual knowledge
+      </p>
+      
+      <p id="ref-8">
+        [8] Fluid intelligence: A brief history
+      </p>
+      
+      <p id="ref-9">
+        [9] CL-bench: A Benchmark for Context Learning
+      </p>
+      
+      <p id="ref-10">
+        [10] ARC Prize 2024: Technical Report
+      </p>
+      
+      <p id="ref-11">
+        [11] Learning without training: The implicit dynamics of in-context learning
+      </p>
 
-    </code></pre>
+    </div>
   </div>
 </section>
-
 
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="https://arxiv.org/pdf/2026.XXXXX.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/arctanxarc/GENIUS" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            Template borrowed from <a
-              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
-          </p>
-        </div>
-      </div>
+      <p>
+        This website is licensed under a <a rel="license"
+                                            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+        Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
     </div>
   </div>
 </footer>
 
 </body>
-
 </html>
 
